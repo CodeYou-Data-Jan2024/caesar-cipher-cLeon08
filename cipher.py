@@ -1,5 +1,5 @@
 # add your code here
-orgMsg = input("Please enter a sentence to encrpyt: ")
+orgMsg = input("Please enter a sentence: ")
 newMsg = ""
 
 for i in range(len(orgMsg)):
@@ -13,4 +13,4 @@ for i in range(len(orgMsg)):
     else:
         newMsg += chr((ord(char) + 5-97) % 26 + 97)
     
-print (newMsg)
+print ("The encrypted sentence is: " + newMsg.lower())
